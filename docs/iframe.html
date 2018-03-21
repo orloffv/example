@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<script>
+			window.addEventListener('error', function(error) {
+				document.querySelector('#result').innerHTML += error.message + ':' +  error.filename;
+			});
+		</script>
+	</head>
+	<body>
+		<div id="result"></div>
+		<script>
+			window.in_iframe();
+		</script>
+	</body>
+</html>

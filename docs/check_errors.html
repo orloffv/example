@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script>
+			window.addEventListener('error', function(error) {
+				document.querySelector('#result').innerHTML += error.message + ':' +  error.filename + '<br>';
+			});
+		</script>
+	</head>
+	<body>
+		<div id="result"></div>
+
+		<iframe width="900" src="https://orloffv.github.io/example/iframe.html"></iframe>
+
+		<script>
+			setTimeout(function() {
+				window.timeouted();
+			});
+			window.in_current_html();
+		</script>
+	</body>
+</html>
